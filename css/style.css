@@ -12,6 +12,7 @@
   font-weight: normal;
   font-style: normal;
 }
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
   --primaryColor: #232f3e;
@@ -99,6 +100,26 @@ body {
 .ofertas-cards {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.cards {
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card h3 {
+  margin: 24px 24px 8px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+.card a{
+  color: black;
+}
+.card p, a{
+  margin: 8px;
+  text-decoration: none;
+}
+#text-device{
+  margin-top: 24px;
 }
