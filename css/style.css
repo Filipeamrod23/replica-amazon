@@ -103,6 +103,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .card {
   display: flex;
   flex-direction: column;
