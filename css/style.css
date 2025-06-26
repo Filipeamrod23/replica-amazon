@@ -18,6 +18,9 @@
   --primaryColor: #232f3e;
   --secondaryColor: #ffffff;
 }
+html {
+  overflow-x: hidden;
+}
 body {
   height: 100vh;
 }
@@ -89,6 +92,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 160px 80px;
+  flex-wrap: wrap;
 }
 .section-ofertas h2 {
   font-family: "Arial", sans-serif;
@@ -99,14 +103,15 @@ body {
 }
 .ofertas-cards {
   display: flex;
-  gap: 16px;
+  gap: 72px;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .card {
   display: flex;
   flex-direction: column;
+  max-width: 300px;
+  gap: 16px;
 }
 .card h3 {
   margin: 24px 24px 8px 0;
@@ -120,6 +125,16 @@ body {
 .card p, a{
   margin: 8px;
   text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.card img {
+  width: 300px;
+  transition: 0.3s ease-out;
+}
+.card img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
 }
 #text-device{
   margin-top: 24px;
