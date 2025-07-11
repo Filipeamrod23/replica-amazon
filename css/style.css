@@ -26,6 +26,7 @@ body {
 }
 
 .header {
+  width: 100%;
 }
 
 .header-nav {
@@ -44,6 +45,7 @@ body {
   background-color: #febd69;
   align-self: center;
   padding: 4px;
+  margin: 0;
   border: none;
   display: flex;
   border-radius: 0 4px 4px 0;
@@ -86,6 +88,14 @@ body {
   background-size: cover;
   background-image: url(../img/AlexaAD.svg);
   background-repeat: no-repeat;
+}
+.menu-bottom {
+  background-color: #232f3f;
+  display: flex;
+  gap: 32px;
+  padding: 24px;
+  color: var(--secondaryColor);
+  font-family: "AmazonEmber";
 }
 .section-ofertas {
   display: flex;

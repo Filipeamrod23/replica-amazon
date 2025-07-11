@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.grid-container {
+  display: grid;
+  background-color: aqua;
+  width: 80%;
+  grid-template-columns: 20% 55% 20%;
+  gap: 32px;
+  padding: 60px 120px;
+}
+.item-container {
+  display: flex;
+  flex-direction: column;
+}
+.item-container img {
+  width: 100%;
+  height: auto;
+}
+.item-buttons{
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.item-buttons button {
+  border: 1px solid black;
+  padding: 8px;
+  padding: 4px 24px;
+  border-radius: 12px;
+}
