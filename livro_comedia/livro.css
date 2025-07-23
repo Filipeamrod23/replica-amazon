@@ -2,10 +2,10 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: "AmazonEmber";
 }
 .grid-container {
   display: grid;
-  background-color: aqua;
   width: 80%;
   grid-template-columns: 20% 55% 20%;
   gap: 32px;
@@ -19,7 +19,7 @@ body {
   width: 100%;
   height: auto;
 }
-.item-buttons{
+.item-buttons {
   margin-top: 24px;
   display: flex;
   justify-content: center;
@@ -30,4 +30,48 @@ body {
   padding: 8px;
   padding: 4px 24px;
   border-radius: 12px;
+}
+.container-middle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container-middle h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+.item-buy {
+  padding: 12px;
+  border: 1px #d5d9d9 solid;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.container-options button {
+  width: 100px;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 4px;
+}
+.container-options span {
+  font-weight: bold;
+}
+.item-buy {
+  box-shadow: 0 0 20px #d2d2d2
+}
+.item-buy button {
+  border: 1px solid rgba(54, 54, 54, 0.711);
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 8px;
+}
+.item-buy span {
+  font-weight: bold;
+}
+.item-buy a {
+  
 }
