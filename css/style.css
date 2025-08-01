@@ -149,3 +149,9 @@ body {
 #text-device{
   margin-top: 24px;
 }
+
+@media (max-width: 768px) {
+  .header-banner{
+    background-image: url(../img/AlexaAD_tabletVersion.png);
+  }
+  }
