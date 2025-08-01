@@ -101,14 +101,18 @@
       </div>
       <div class="modal">
         <div class="modalContent">
+          <div class="modal-close">
+            <h3>Consultar Frete</h3>
+            <button class="button-close">x</button>
+          </div>
           <span class="modalContent-span">
-            <div class="modal-close">
-              <h3>Consultar Frete</h3>
-              <button class="button-close">x</button>
-            </div>
-            <input class="modalInput" placeholder="Digite seu CEP para calcular o frete" />
-            <button id="modalButton">Pesquisar</button>
+            <input
+              class="modalInput"
+              placeholder="Digite seu CEP para calcular o frete"
+            />
+            <button id="searchButton">Pesquisar</button>
           </span>
+          <div class="calc-result"></div>
         </div>
       </div>
     </div>
