@@ -152,6 +152,7 @@ body {
 
 @media (max-width: 768px) {
   .header-banner{
-    background-image: url(../img/AlexaAD_tabletVersion.png);
+    background-image: url(../img/Amazon-Alexa.png);
+    background-position: center;
   }
   }
