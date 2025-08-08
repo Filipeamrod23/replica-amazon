@@ -23,6 +23,7 @@ html {
 }
 body {
   height: 100vh;
+  width: 100%;
 }
 
 .header {
@@ -36,6 +37,9 @@ body {
   justify-content: space-between;
   padding: 24px;
   gap: 32px;
+}
+.header-menu {
+  overflow-x: hidden;
 }
 .span-search {
   width: 50%;
