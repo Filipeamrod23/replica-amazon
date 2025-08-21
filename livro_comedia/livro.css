@@ -108,13 +108,13 @@ body {
   background-color: white;
   position: relative;
   width: 300px;
-  height: 150px;
+  height: 300px;
   margin: 100px auto;
   padding: 48px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 8px;
 }
@@ -154,5 +154,18 @@ body {
   font-family: AmazonEmberBold, sans-serif;
 }
 .calc-result {
-  height: 50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+.input-api {
+  background-color: #f0c14b;
+  padding: 8px;
+  color: #000000;
+  border-radius: 8px;
+}
+.input-api::placeholder{
+  color: rgb(0, 0, 0);
 }
