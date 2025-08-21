@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Amazon | Usuário</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="header">
-      <nav class="header-nav">
-        <img class="nav-logo" src="../img/Amazon_logo_whiteBetter.svg" alt="" />
-        <span class="span-search">
-          <input
-            class="nav-search"
-            type="text"
-            placeholder="Pesquisar um produto"
-          />
-          <a class="link-lupa" href="">
-            <img class="img-lupa" src="../img/lupa.svg" alt=""
-          /></a>
-        </span>
-        <ul class="header-menu">
-          <li><img src="../img/person.svg" alt="" /></li>
-          <li><a href=""> Entrar </a></li>
+        <nav class="header-nav">
+            <img class="nav-logo" src="../img/Amazon_logo_whiteBetter.svg" alt="" />
+            <span class="span-search">
+                <input class="nav-search" type="text" placeholder="Pesquisar um produto" />
+                <a class="link-lupa" href="">
+                    <img class="img-lupa" src="../img/lupa.svg" alt="" /></a>
+            </span>
+            <ul class="header-menu">
+                <li><img src="../img/person.svg" alt="" /></li>
+                <li><a href=""> Entrar </a></li>
 
-          <li><img src="../img/Heart.svg" alt="" /></li>
-          <li><a href=""> Lista de Desejos </a></li>
+                <li><img src="../img/Heart.svg" alt="" /></li>
+                <li><a href=""> Lista de Desejos </a></li>
 
-          <li><img src="./img/Shopping cart.svg" alt="" /></li>
-          <li><a href=""> Carrinho</a></li>
+                <li><img src="./img/Shopping cart.svg" alt="" /></li>
+                <li><a href=""> Carrinho</a></li>
+            </ul>
+        </nav>
+        <ul class="menu-bottom">
+            <li>Todos</li>
+            <li>Vendas na amazon</li>
+            <li>Atendimento ao cliente</li>
+            <li>Comprar novamente</li>
         </ul>
-      </nav>
-      <ul class="menu-bottom">
-        <li>Todos</li>
-        <li>Vendas na amazon</li>
-        <li>Atendimento ao cliente</li>
-        <li>Comprar novamente</li>
-      </ul>
     </header>
-  </body>
+    <div>
+        <input class="input-api" id="input-id" placeholder="Digite seu id do usuário" type="text">
+        <input class="input-api" id="input-nome" placeholder="Digite seu nome" type="text">
+        <input class="input-email" id="input-email" placeholder="Digite seu e-mail" type="text">
+        <button id="button-search" >Busca usuário</button>
+    </div>
+    <div id="response"></div>
+    <script src="./user.js"></script>
+</body>
+
 </html>

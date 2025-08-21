@@ -56,7 +56,28 @@ app.put('/usuarios/:id', (req, res)=>{
   // A informação nome e e-mail vem através do body porque ela precisa ser "escondida"
   const {nome, email} = req.body;
 
-  const usuario = users.find(u => u.id === id)
+  const usuario = users.find(u => u.id === id);
+  if (!usuario) {
+        return res.status(404).json({ mensagem: 'Usuário não encontrado' })
+    }
+
+    usuario.nome = nome || usuario.nome;
+    usuario.email = email || usuario.email;
+
+    res.json({
+        mensagem: 'Usuário atualizado com sucesso',
+        usuario
+    });if (!usuario) {
+        return res.status(404).json({ mensagem: 'Usuário não encontrado' })
+    }
+
+    usuario.nome = nome || usuario.nome;
+    usuario.email = email || usuario.email;
+
+    res.json({
+        mensagem: 'Usuário atualizado com sucesso',
+        usuario
+    });
 });
 
 app.delete('/usuarios/:id', (req, res)=>{});
