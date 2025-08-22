@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-id{
+  background-color: #f0c14b;
+  padding: 8px;
+  color: #000000;
+  border-radius: 8px;
+  font-family: AmazonEmber;
+}
+#input-nome{
+  background-color: #f0c14b;
+  padding: 8px;
+  color: #000000;
+  border-radius: 8px;
+  font-family: AmazonEmber;
+}
+#input-email{
+  background-color: #f0c14b;
+  padding: 8px;
+  color: #000000;
+  border-radius: 8px;
+  font-family: AmazonEmber;
+}
+.button-search{
+  background-color: #4bf053;
+  padding: 8px;
+  color: #000000;
+  border-radius: 8px;
+  font-family: AmazonEmber;
+}
