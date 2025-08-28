@@ -51,23 +51,11 @@ app.post('/enviar-dados', (req, res) => {
 });
 
 app.put('/usuarios/:id', (req, res)=>{
-  // A informação ID vem da URL Acessada através do frontend.
   const id = parseInt(req.params.id)
-  // A informação nome e e-mail vem através do body porque ela precisa ser "escondida"
   const {nome, email} = req.body;
 
   const usuario = users.find(u => u.id === id);
   if (!usuario) {
-        return res.status(404).json({ mensagem: 'Usuário não encontrado' })
-    }
-
-    usuario.nome = nome || usuario.nome;
-    usuario.email = email || usuario.email;
-
-    res.json({
-        mensagem: 'Usuário atualizado com sucesso',
-        usuario
-    });if (!usuario) {
         return res.status(404).json({ mensagem: 'Usuário não encontrado' })
     }
 
