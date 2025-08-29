@@ -24,7 +24,7 @@ async function enviarDados() {
   try {
     // a API ela é especial, ela é um recurso assincrono, eu não sei onde está minha API, e para acessar a API, eu preciso de uma função especial
 
-    let resp = await fetch("http://localhost:3000/enviar-dados", {
+    let resp = await fetch("https://server-amazon-o1zh.onrender.com/enviar-dados", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

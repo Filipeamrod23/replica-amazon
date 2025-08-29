@@ -5,7 +5,7 @@ buttonSearch.addEventListener("click", async () => {
   let inputID = document.getElementById("input-id").value.trim(); // <-- agora aqui dentro
 
   try {
-    let resp = await fetch(`http://localhost:3000/usuarios/${inputID}`);
+    let resp = await fetch(`https://server-amazon-o1zh.onrender.com/usuarios/${inputID}`);
     if (resp.ok) {
       let data = await resp.json();
       responseDIV.innerHTML = `
@@ -31,7 +31,7 @@ async function atualizarUsuario(id) {
   let inputEmail = document.getElementById("update-email").value.trim();
 
   try {
-    let resp = await fetch(`http://localhost:3000/usuarios/${id}`, {
+    let resp = await fetch(`https://server-amazon-o1zh.onrender.com/usuarios/${id}`, {
       // <-- agora usa o id real
       method: "PUT",
       headers: { "Content-Type": "application/json" },
@@ -55,7 +55,7 @@ async function atualizarUsuario(id) {
 
 async function deletarUsuario(id) {
   try{
-    let resp = await fetch(`http://localhost:3000/usuarios/${id}`,{
+    let resp = await fetch(`https://server-amazon-o1zh.onrender.com/usuarios/${id}`,{
       method: "DELETE"
     });
 
