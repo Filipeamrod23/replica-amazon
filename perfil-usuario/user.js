@@ -15,6 +15,7 @@ buttonSearch.addEventListener("click", async () => {
         <label>Novo nome: <input id="update-nome" type="text"></label>
         <label>Novo e-mail: <input id="update-email" type="text"></label>
         <button onclick="atualizarUsuario(${data.id})">Salvar alterações</button>
+        <button onclick="deletarUsuario(${data.id})">Deletar</button>
       `;
     } else {
       alert("Usuário não encontrado no sistema");
@@ -49,5 +50,19 @@ async function atualizarUsuario(id) {
   } catch (error) {
     console.log(error);
     alert("Erro ao atualizar usuário");
+  }
+}
+
+async function deletarUsuario(id) {
+  try{
+    let resp = await fetch(`http://localhost:3000/usuarios/${id}`,{
+      method: "DELETE"
+    });
+
+    let data = await resp.json();
+    alert(data.mensagem);
+    responseDIV.innerHTML = "";
+  }catch(error){
+    console.log(error);
   }
 }

@@ -68,7 +68,18 @@ app.put('/usuarios/:id', (req, res)=>{
     });
 });
 
-app.delete('/usuarios/:id', (req, res)=>{});
+app.delete('/usuarios/:id', (req, res)=>{
+  const id = parseInt(req.params.id);
+  const index = users.findIndex(u => u.id === id);
+  
+  if(index === -1){
+    return res.status(404).json({mensagem: "ID do Usuário não consta no sistema"})    
+  }
+  users.splice(index, 1);
+
+  res.json({mensagem: 'Usuário deletado com sucesso'});
+  
+});
 
 app.listen(port, () => {
   console.log("porta está sendo escutada no endereço localhost");
